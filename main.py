@@ -11,7 +11,7 @@ G = nx.erdos_renyi_graph(n, p)
 a = 0
 
 for n in G.nodes():
-a = a + G.degree(n)
+    a = a + G.degree(n)
 
 # средняя степень вершины фактическая
 avr_a = float(a) / len(G.nodes())
@@ -20,7 +20,7 @@ avr_a = float(a) / len(G.nodes())
 avr_theor = (n - 1) * p
 
 # разница значений
-div_a = avr_theor - avr_a
+div_a = avr_a - avr_theor
 
 print("Средняя степень вершины фактическая: ", round(avr_a, 2))
 print("Средняя степень вершины по формуле: ", round(avr_theor, 2))
