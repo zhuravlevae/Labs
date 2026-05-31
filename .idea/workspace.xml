@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9b19d5a-a7a8-46ce-8fc6-7eefd0b6dd6a" name="Changes" comment="Модель Эрдёша-Реньи" />
+    <list default="true" id="c2bf7896-5854-41f7-833d-7beec74cb82f" name="Changes" comment="Реализация алгоритма Дейкстры">
+      <change beforePath="$PROJECT_DIR$/.idea/Labs_analiz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Labs_analiz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Журавлева Е.М." />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;zhuravlevae&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zhuravlevae"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/zhuravlevae/Labs.git&quot;,
-    &quot;accountId&quot;: &quot;f42ceb17-5085-4a64-8f16-6035a20140cb&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zhuravlevae/Labs.git",
+    "accountId": "f42ceb17-5085-4a64-8f16-6035a20140cb"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="3EQo57T68esl5po3zdOUYHbrQjH" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3ERf76zj4Fw6KY5VQgVj3leNlus" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,14 +43,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
+    "Python.dijkstra.executor": "Run",
+    "Python.lab01_dijkstra.executor": "Run",
+    "Python.lab02_centrality.executor": "Run",
+    "Python.lab03_erdos_renyi.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -57,43 +63,43 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e9b19d5a-a7a8-46ce-8fc6-7eefd0b6dd6a" name="Changes" comment="" />
-      <created>1780119967443</created>
+      <changelist id="c2bf7896-5854-41f7-833d-7beec74cb82f" name="Changes" comment="" />
+      <created>1780146132947</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1780119967443</updated>
+      <updated>1780146132947</updated>
     </task>
-    <task id="LOCAL-00001" summary="Модель Эрдёша-Реньи с заданными характеристиками">
+    <task id="LOCAL-00001" summary="Вычисление центральности в собственных векторах">
       <option name="closed" value="true" />
-      <created>1780120269462</created>
+      <created>1780146588914</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1780120269462</updated>
+      <updated>1780146588914</updated>
     </task>
-    <task id="LOCAL-00002" summary="Модель Эрдёша-Реньи">
+    <task id="LOCAL-00002" summary="Реализация алгоритма Дейкстры">
       <option name="closed" value="true" />
-      <created>1780144607834</created>
+      <created>1780147724106</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1780144607834</updated>
+      <updated>1780147724106</updated>
     </task>
-    <task id="LOCAL-00003" summary="Модель Эрдёша-Реньи">
+    <task id="LOCAL-00003" summary="Генерация графа в модели Эрдёша-Реньи">
       <option name="closed" value="true" />
-      <created>1780144789905</created>
+      <created>1780148120502</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1780144789905</updated>
+      <updated>1780148120502</updated>
     </task>
-    <task id="LOCAL-00004" summary="Модель Эрдёша-Реньи">
+    <task id="LOCAL-00004" summary="Реализация алгоритма Дейкстры">
       <option name="closed" value="true" />
-      <created>1780145369023</created>
+      <created>1780148263089</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1780145369023</updated>
+      <updated>1780148263089</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -101,47 +107,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Модель Эрдёша-Реньи с заданными характеристиками" />
-    <MESSAGE value="Модель Эрдёша-Реньи" />
-    <option name="LAST_COMMIT_MESSAGE" value="Модель Эрдёша-Реньи" />
+    <MESSAGE value="Вычисление центральности в собственных векторах" />
+    <MESSAGE value="Генерация графа в модели Эрдёша-Реньи" />
+    <MESSAGE value="Реализация алгоритма Дейкстры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализация алгоритма Дейкстры" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab02_centrality.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
