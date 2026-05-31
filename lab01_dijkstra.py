@@ -2,8 +2,8 @@ import heapq
 
 def dijkstra(graph, start):
 
-    # Если передана матрица смежности → конвертируем в список смежности
-    if isinstance(graph, list) and all(isinstance(row, list) for row in graph):
+    # Если передана матрица смежности, конвертируем в список смежности
+    if isinstance(graph, list):
         n = len(graph)
         adj = {i: {} for i in range(n)}
         for i in range(n):
@@ -19,32 +19,33 @@ def dijkstra(graph, start):
     dist[start] = 0
 
     R = set()          # Множество результирующих вершин
-    Q = []             # Множество кандидатов (приоритетная очередь)
+    Q = []             # Множество кандидатов
 
-    # ШАГ 1 (PDF): В R добавляется n0, смежные в Q
-    R.add(start)
-    for v, w in graph[start].items():
-        dist[v] = w
-        prev[v] = start
-        heapq.heappush(Q, (w, v))
+    # ШАГ 1. В R добавляется n0, смежные в Q
+    R.add(start)       # n0 в R
+    for v, w in graph[start].items():     # просмотр смежных
+        dist[v] = w                       # расстояние до n0
+        prev[v] = start                   # запоминаем ребро
+        heapq.heappush(Q, (w, v))         # добавляем в Q
 
-    # ШАГ 2-4: Итеративная обработка
+    # ШАГ 2: Выбор вершины из Q
     while Q:
-        d, u = heapq.heappop(Q)          # ШАГ 2: выбор ближайшей из Q
-        if u in R:                       # Категория 1: уже в R → пропуск
+        d, u = heapq.heappop(Q)          # выбор ближайшей из Q
+        if u in R:                       # при извлечении из Q, если уже в R → пропуск
             continue
-        R.add(u)                         # ШАГ 2: добавление в R
+        R.add(u)                         # добавление в R
 
-        # ШАГ 3: просмотр смежных вершин
+        # ШАГ 3: Просмотр смежных вершин
         for v, w in graph[u].items():
-            if v in R:                   # Категория 1
+            if v in R:                   # при просмотре соседей, если уже в R → пропуск
                 continue
             new_d = d + w
-            if new_d < dist[v]:          # Категории 2 и 3
-                dist[v] = new_d
-                prev[v] = u
-                heapq.heappush(Q, (new_d, v))
-
+            if new_d < dist[v]:          
+                dist[v] = new_d          # обновляем расстояние
+                prev[v] = u              # обновляем ссылку
+                heapq.heappush(Q, (new_d, v))      # новая запись в Q
+    # выход из цикла когда Q пуст
+    
     return dist, prev
 
 def get_path(prev, start, end):
@@ -56,7 +57,7 @@ def get_path(prev, start, end):
     path.reverse()
     return path if path and path[0] == start else []
 
-# ==================== ПРИМЕР ====================
+# Пример использования 
 if __name__ == "__main__":
     matrix = [
         [0, 2, 1, 0, 0],
